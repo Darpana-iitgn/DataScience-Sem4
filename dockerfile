@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8866
 
 # Set the command to run the Voila app.
-CMD ["voila", "main.ipynb", "--port=8866", "--no-browser", "--Voila.ip=0.0.0.0","--theme=dark"]
+CMD ["voila", "main.ipynb", "--port=8866", "--no-browser", "--Voila.ip=0.0.0.0","--theme=dark","--strip_sources=False"]
