@@ -1,0 +1,63 @@
+`timescale 1ns / 1ps
+// 6-bit Counter-cum-LFSR
+module lfsr_counter(
+ input clk, reset, load, mode, up, enable, // Control signals
+ input [5:0] seed, // Seed input for
+LFSR/Counter
+ output reg [5:0] Q, // Output
+ output reg err_flag, // Error flag for invalid
+LFSR seed
+ output reg overflow // Overflow flag for counter
+);
+ reg [5:0] LFSR = 6'b000001, COUNT; // For LFSR and Counter
+ wire feedback; // Feedback bit for LFSR
+
+ assign feedback = LFSR[5] ^ LFSR[4]; // XOR feedback from Q[5] and Q[4]
+
+ always @(posedge clk or posedge reset) begin
+ if (reset) begin // Asynchronous active high reset
+ err_flag <= 0; // Clear error flag
+ overflow <= 0; // Clear overflow flag
+ if (mode) begin
+ LFSR <= 6'b000001; // Reset LFSR to a valid state
+ Q <= 6'b000001;
+ end else begin
+ COUNT <= up ? 6'b000000 : 6'b111111; // Reset counter based
+on direction
+ Q <= up ? 6'b000000 : 6'b111111;
+ end
+ end
+ else if (load) begin
+ if (mode) begin // LFSR Mode
+ LFSR <= seed;
+ Q <= seed;
+ err_flag <= (seed == 6'b000000); // Set error if LFSR is
+loaded with 000000
+ end else begin // Counter Mode
+ COUNT <= seed;
+ Q <= seed;
+ err_flag <= 0; // Clear err_flag if in counter mode
+ end
+ overflow <= 0; //Clear overflow if some seed is loaded
+ end
+ else if (enable) begin
+ if (mode) begin // LFSR Mode
+ overflow <= 0; // Clear overflow when in LFSR mode
+ LFSR = {LFSR[4:0], feedback};
+ Q = LFSR;
+ end else begin // Counter Mode
+ err_flag <= 0; // Clear err_flag when in Counter mode
+ if (up) begin
+ overflow = (COUNT + 1 > 6'b111111);
+if (!overflow) COUNT = COUNT + 1;
+ end else begin
+
+
+ overflow = (COUNT - 1 > 6'b111111);
+ if (!overflow) COUNT = COUNT - 1;
+ end
+ Q = COUNT;
+ end
+ end
+ end
+endmodule
