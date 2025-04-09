@@ -6,3 +6,4 @@ plotly
 voila
 ipykernel
 ipywidgets
+notebook
