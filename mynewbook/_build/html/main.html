@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>A Case study on how different countries develop &#8212; My sample book</title>
   
   
   
@@ -172,7 +172,12 @@
                 </a>
             </li>
         </ul>
-        
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">A Case study on how different countries develop</a></li>
+
+
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -356,7 +361,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>A Case study on how different countries develop</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,7 +370,24 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">A Case study on how different countries develop</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-science-assignment">Data Science Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-and-development-expenditure">Research and Development Expenditure:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renewable-electricity">Renewable Electricity:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#life-expectancy-at-birth">Life Expectancy at Birth:</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gdp-growth">GDP Growth:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forest-area">Forest Area:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exports-of-goods-and-services">Exports of Goods and Services:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-power-consumption">Electric Power Consumption:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-dioxide-emissions">Carbon Dioxide Emissions:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arable-land">Arable Land:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#age-dependency-ratio">Age Dependency Ratio:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
 </ul>
 
             </nav>
@@ -378,7 +400,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="a-case-study-on-how-different-countries-develop">
+<h1>A Case study on how different countries develop<a class="headerlink" href="#a-case-study-on-how-different-countries-develop" title="Link to this heading">#</a></h1>
+<section id="data-science-assignment">
+<h2>Data Science Assignment<a class="headerlink" href="#data-science-assignment" title="Link to this heading">#</a></h2>
+<p>Group Members:</p>
+<ol class="arabic simple">
+<li><p>Chavda Haarit R. <em>(23110077)</em></p></li>
+<li><p>Dapana Desai <em>(23110085)</em></p></li>
+<li><p>Siddharth Rajandekar <em>(23110310)</em></p></li>
+</ol>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -534,21 +566,22 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">indicators_filtered</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GDP growth (annual %)&#39;</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">indicators_filtered</span> <span class="o">=</span> <span class="p">[</span>
+                       <span class="s1">&#39;Research and development expenditure (</span><span class="si">% o</span><span class="s1">f GDP)&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;Renewable electricity output (</span><span class="si">% o</span><span class="s1">f total electricity output)&#39;</span><span class="p">,</span>
                        <span class="s1">&#39;Life expectancy at birth, total (years)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Number of infant deaths&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;GDP growth (annual %)&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;Forest area (</span><span class="si">% o</span><span class="s1">f land area)&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;Exports of goods and services (</span><span class="si">% o</span><span class="s1">f GDP)&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;Electric power consumption (kWh per capita)&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;Carbon dioxide (CO2) emissions (total) excluding LULUCF (</span><span class="si">% c</span><span class="s1">hange from 1990)&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;Arable land (</span><span class="si">% o</span><span class="s1">f land area)&#39;</span><span class="p">,</span>
                        <span class="s1">&#39;Age dependency ratio (</span><span class="si">% o</span><span class="s1">f working-age population)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Literacy rate, adult total (</span><span class="si">% o</span><span class="s1">f people ages 15 and above)&#39;</span><span class="p">,</span>
+                      <span class="c1">#  &#39;Literacy rate, adult total (% of people ages 15 and above)&#39;,</span>
+                      <span class="c1">#  &#39;Number of infant deaths&#39;,</span>
                       <span class="c1">#  &#39;Income share held by fourth 20%&#39;,</span>
                       <span class="c1">#  &#39;Poverty gap at $2.15 a day (2017 PPP) (%)&#39;,</span>
                       <span class="c1">#  &#39;Human capital index (HCI) (scale 0-1)&#39;,</span>
-                      <span class="c1">#  &#39;Research and development expenditure (% of GDP)&#39;,</span>
-                       <span class="s1">&#39;Electric power consumption (kWh per capita)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Renewable electricity output (</span><span class="si">% o</span><span class="s1">f total electricity output)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Forest area (</span><span class="si">% o</span><span class="s1">f land area)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Arable land (</span><span class="si">% o</span><span class="s1">f land area)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Carbon dioxide (CO2) emissions (total) excluding LULUCF (</span><span class="si">% c</span><span class="s1">hange from 1990)&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;Exports of goods and services (</span><span class="si">% o</span><span class="s1">f GDP)&#39;</span>
                        <span class="p">]</span>
 
 <span class="n">countries_filtered</span> <span class="o">=</span> <span class="p">[</span>
@@ -574,7 +607,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
 14
 </pre></div>
 </div>
@@ -590,7 +623,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(154, 68)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(140, 68)
          Country Name Country Code  \
 112256         Brazil          BRA   
 112285         Brazil          BRA   
@@ -598,11 +631,11 @@ document.write(`
 112548         Brazil          BRA   
 112596         Brazil          BRA   
 ...               ...          ...   
+381941  United States          USA   
 381953  United States          USA   
 382185  United States          USA   
-382192  United States          USA   
-382431  United States          USA   
 382695  United States          USA   
+382702  United States          USA   
 
                                            Indicator Name     Indicator Code  \
 112256  Age dependency ratio (% of working-age populat...        SP.POP.DPND   
@@ -611,579 +644,54 @@ document.write(`
 112548        Electric power consumption (kWh per capita)  EG.USE.ELEC.KH.PC   
 112596           Exports of goods and services (% of GDP)     NE.EXP.GNFS.ZS   
 ...                                                   ...                ...   
+381941                       Forest area (% of land area)     AG.LND.FRST.ZS   
 381953                              GDP growth (annual %)  NY.GDP.MKTP.KD.ZG   
 382185            Life expectancy at birth, total (years)     SP.DYN.LE00.IN   
-382192  Literacy rate, adult total (% of people ages 1...     SE.ADT.LITR.ZS   
-382431                            Number of infant deaths        SH.DTH.IMRT   
 382695  Renewable electricity output (% of total elect...     EG.ELC.RNEW.ZS   
+382702    Research and development expenditure (% of GDP)  GB.XPD.RSDV.GD.ZS   
 
-                 1960           1961          1962          1963  \
-112256      87.666536      88.301522     88.785797     89.023131   
-112285            NaN       2.826945      2.890236      2.953648   
-112329            NaN            NaN           NaN           NaN   
-112548            NaN            NaN           NaN           NaN   
-112596       6.281814       6.420217      4.008479      8.933145   
-...               ...            ...           ...           ...   
-381953            NaN       2.300000      6.100000      4.400000   
-382185      69.770732      70.270732     70.119512     69.917073   
-382192            NaN            NaN           NaN           NaN   
-382431  102890.000000  101205.000000  98458.000000  94790.000000   
-382695            NaN            NaN           NaN           NaN   
+             1960       1961       1962       1963       1964       1965  ...  \
+112256  87.666536  88.301522  88.785797  89.023131  88.906009  88.503533  ...   
+112285        NaN   2.826945   2.890236   2.953648   3.016939   3.080231  ...   
+112329        NaN        NaN        NaN        NaN        NaN        NaN  ...   
+112548        NaN        NaN        NaN        NaN        NaN        NaN  ...   
+112596   6.281814   6.420217   4.008479   8.933145   6.460997   7.503164  ...   
+...           ...        ...        ...        ...        ...        ...  ...   
+381941        NaN        NaN        NaN        NaN        NaN        NaN  ...   
+381953        NaN   2.300000   6.100000   4.400000   5.800000   6.400000  ...   
+382185  69.770732  70.270732  70.119512  69.917073  70.165854  70.214634  ...   
+382695        NaN        NaN        NaN        NaN        NaN        NaN  ...   
+382702        NaN        NaN        NaN        NaN        NaN        NaN  ...   
 
-                1964          1965  ...          2014          2015  \
-112256     88.906009     88.503533  ...     43.818370     43.593593   
-112285      3.016939      3.080231  ...      6.448205      6.522743   
-112329           NaN           NaN  ...    140.706496    128.119060   
-112548           NaN           NaN  ...   2655.034924           NaN   
-112596      6.460997      7.503164  ...     11.011943     12.900191   
-...              ...           ...  ...           ...           ...   
-381953      5.800000      6.400000  ...      2.523820      2.945550   
-382185     70.165854     70.214634  ...     78.841463     78.690244   
-382192           NaN           NaN  ...           NaN           NaN   
-382431  91276.000000  85621.000000  ...  23341.000000  23126.000000   
-382695           NaN           NaN  ...     12.953827     13.228593   
+               2014        2015        2016        2017        2018  \
+112256    43.818370   43.593593   43.439811   43.371330   43.431652   
+112285     6.448205    6.522743    6.597162    6.671580    6.668710   
+112329   140.706496  128.119060  112.622739  117.942083  107.483478   
+112548  2655.034924         NaN         NaN         NaN         NaN   
+112596    11.011943   12.900191   12.466679   12.518968   14.634999   
+...             ...         ...         ...         ...         ...   
+381941    33.869659   33.899723   33.899723   33.866926   33.866926   
+381953     2.523820    2.945550    1.819451    2.457622    2.966505   
+382185    78.841463   78.690244   78.539024   78.539024   78.639024   
+382695    12.953827   13.228593         NaN         NaN         NaN   
+382702     2.717860    2.787000    2.853500    2.904320    3.010100   
 
-                2016          2017          2018          2019          2020  \
-112256     43.439811     43.371330     43.431652     43.539748     43.586067   
-112285      6.597162      6.671580      6.668710      6.665840      6.662970   
-112329    112.622739    117.942083    107.483478    106.318884     97.194511   
-112548           NaN           NaN           NaN           NaN           NaN   
-112596     12.466679     12.518968     14.634999     14.122919     16.453552   
-...              ...           ...           ...           ...           ...   
-381953      1.819451      2.457622      2.966505      2.583825     -2.163029   
-382185     78.539024     78.539024     78.639024     78.787805     76.980488   
-382192           NaN           NaN           NaN           NaN           NaN   
-382431  22707.000000  22077.000000  21389.000000  20842.000000  20272.000000   
-382695           NaN           NaN           NaN           NaN           NaN   
+              2019       2020        2021        2022        2023  
+112256   43.539748  43.586067   43.640470   43.790263   44.029095  
+112285    6.665840   6.662970    6.660100    6.657230         NaN  
+112329  106.318884  97.194511  123.007389  111.073561  111.333549  
+112548         NaN        NaN         NaN         NaN         NaN  
+112596   14.122919  16.453552   19.109430   19.630765   18.110279  
+...            ...        ...         ...         ...         ...  
+381941   33.866926  33.866926   33.866926   33.866926         NaN  
+381953    2.583825  -2.163029    6.055053    2.512375    2.887556  
+382185   78.787805  76.980488   76.329268   77.434146         NaN  
+382695         NaN        NaN         NaN         NaN         NaN  
+382702    3.170490   3.467770    3.457050         NaN         NaN  
 
-                2021          2022        2023  
-112256     43.640470     43.790263   44.029095  
-112285      6.660100      6.657230         NaN  
-112329    123.007389    111.073561  111.333549  
-112548           NaN           NaN         NaN  
-112596     19.109430     19.630765   18.110279  
-...              ...           ...         ...  
-381953      6.055053      2.512375    2.887556  
-382185     76.329268     77.434146         NaN  
-382192           NaN           NaN         NaN  
-382431  19995.000000  19920.000000         NaN  
-382695           NaN           NaN         NaN  
-
-[154 rows x 68 columns]
+[140 rows x 68 columns]
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.experimental</span><span class="w"> </span><span class="kn">import</span> <span class="n">enable_iterative_imputer</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.impute</span><span class="w"> </span><span class="kn">import</span> <span class="n">IterativeImputer</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">BayesianRidge</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">MinMaxScaler</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
-
-<span class="c1"># 1. Prepare year columns (2000-2022)</span>
-<span class="n">year_cols</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2023</span><span class="p">)]</span>
-<span class="n">data_wdi_filtered</span> <span class="o">=</span> <span class="n">data_wdi_filtered</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> 
-<span class="n">data_wdi_filtered</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">year_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_wdi_filtered</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
-
-<span class="c1"># 2. Calculate missing percentage for year columns only</span>
-<span class="n">missing_percent</span> <span class="o">=</span> <span class="n">data_wdi_filtered</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total missing values: </span><span class="si">{</span><span class="n">missing_percent</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
-
-<span class="c1"># 3. Show pre-imputation samples with NaNs</span>
-<span class="n">nan_samples</span> <span class="o">=</span> <span class="n">data_wdi_filtered</span><span class="p">[</span><span class="n">data_wdi_filtered</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Before Imputation - Samples with NaNs:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nan_samples</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator Name&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">year_cols</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]])</span>
-
-<span class="c1"># 4. Enhanced Imputation with indicator-specific scaling</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">svd_imputation</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-    <span class="n">final_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator Name&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    
-    <span class="k">for</span> <span class="n">indicator</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Indicator Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
-        <span class="c1"># Filter indicator data</span>
-        <span class="n">mask</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Indicator Name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">indicator</span>
-        <span class="n">indicator_data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="n">year_cols</span><span class="p">]</span>
-        
-        <span class="c1"># Skip if all data is missing</span>
-        <span class="k">if</span> <span class="n">indicator_data</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
-            <span class="k">continue</span>
-        
-        <span class="c1"># Remove completely empty columns for this indicator</span>
-        <span class="n">valid_cols</span> <span class="o">=</span> <span class="n">indicator_data</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">indicator_data</span><span class="o">.</span><span class="n">notna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)]</span>
-        <span class="n">working_data</span> <span class="o">=</span> <span class="n">indicator_data</span><span class="p">[</span><span class="n">valid_cols</span><span class="p">]</span>
-        
-        <span class="c1"># Skip if no valid columns exist</span>
-        <span class="k">if</span> <span class="n">working_data</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
-            <span class="k">continue</span>
-        
-        <span class="c1"># Scale to [0,1] range using MinMaxScaler</span>
-        <span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">scaled_data</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">working_data</span><span class="p">)</span>
-        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-            <span class="c1"># Handle constant columns or completely missing rows</span>
-            <span class="n">scaled_data</span> <span class="o">=</span> <span class="n">working_data</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
-        
-        <span class="c1"># BayesianRidge estimator for IterativeImputer</span>
-        <span class="k">with</span> <span class="n">warnings</span><span class="o">.</span><span class="n">catch_warnings</span><span class="p">():</span>
-            <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
-            <span class="n">imputer</span> <span class="o">=</span> <span class="n">IterativeImputer</span><span class="p">(</span>
-                <span class="n">estimator</span><span class="o">=</span><span class="n">BayesianRidge</span><span class="p">(),</span>
-                <span class="n">max_iter</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>  <span class="c1"># Increased iterations for better convergence</span>
-                <span class="n">tol</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span>
-                <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
-            <span class="p">)</span>
-            <span class="n">imputed</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">scaled_data</span><span class="p">)</span>
-        
-        <span class="c1"># Reverse scaling and clip values to original range</span>
-        <span class="n">final_values</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">imputed</span><span class="p">)</span>
-        <span class="n">data_min</span> <span class="o">=</span> <span class="n">working_data</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
-        <span class="n">data_max</span> <span class="o">=</span> <span class="n">working_data</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-        <span class="n">final_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">final_values</span><span class="p">,</span> <span class="n">data_min</span><span class="p">,</span> <span class="n">data_max</span><span class="p">)</span>
-        
-        <span class="c1"># Reconstruct full timeline with valid columns filled in imputed values</span>
-        <span class="n">full_reconstructed</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="n">full_reconstructed</span><span class="p">[</span><span class="n">valid_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">final_values</span>
-        
-        <span class="c1"># Fill any remaining gaps with linear interpolation (safety net)</span>
-        <span class="n">full_reconstructed</span> <span class="o">=</span> <span class="n">full_reconstructed</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">limit_direction</span><span class="o">=</span><span class="s2">&quot;both&quot;</span><span class="p">)</span>
-        
-        <span class="c1"># Store results in the final DataFrame</span>
-        <span class="n">final_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="n">year_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">full_reconstructed</span><span class="o">.</span><span class="n">values</span>
-    
-    <span class="k">return</span> <span class="n">final_df</span>
-
-<span class="c1"># 5. Apply imputation to the dataset</span>
-<span class="n">final_data</span> <span class="o">=</span> <span class="n">svd_imputation</span><span class="p">(</span><span class="n">data_wdi_filtered</span><span class="p">)</span>
-
-<span class="c1"># 6. Force-fill any remaining NaNs (absolute safeguard)</span>
-<span class="n">final_data</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">final_data</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">final_data</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-
-<span class="c1"># 7. Show post-imputation results for the same samples</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">After Imputation - Same Samples:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">final_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">nan_samples</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator Name&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">year_cols</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]])</span>
-
-<span class="c1"># 8. Final validation to ensure no NaNs remain in the dataset</span>
-<span class="n">remaining_nans</span> <span class="o">=</span> <span class="n">final_data</span><span class="p">[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Remaining NaNs: </span><span class="si">{</span><span class="n">remaining_nans</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final data shape:&quot;</span><span class="p">,</span> <span class="n">final_data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">remaining_nans</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;There are still NaN values&quot;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total missing values: 13.30%
-Before Imputation - Samples with NaNs:
-       Country Name                                     Indicator Name  2018  \
-220624        Japan  Literacy rate, adult total (% of people ages 1...   NaN   
-183224      Germany  Literacy rate, adult total (% of people ages 1...   NaN   
-131367         Chad  Renewable electricity output (% of total elect...   NaN   
-
-        2019  2020  2021  2022  
-220624   NaN   NaN   NaN   NaN  
-183224   NaN   NaN   NaN   NaN  
-131367   NaN   NaN   NaN   NaN  
-
-After Imputation - Same Samples:
-       Country Name                                     Indicator Name  \
-220624        Japan  Literacy rate, adult total (% of people ages 1...   
-183224      Germany  Literacy rate, adult total (% of people ages 1...   
-131367         Chad  Renewable electricity output (% of total elect...   
-
-             2018       2019       2020       2021       2022  
-220624  96.819626  77.372880  96.938937  90.000000  75.411809  
-183224  96.819626  77.372880  96.938937  90.000000  75.411809  
-131367  17.037001  16.246645  16.246645  16.246645  16.246645  
-
-Remaining NaNs: 0
-Final data shape: (154, 25)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">final_data</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>         Country Name                                     Indicator Name  \
-112256         Brazil  Age dependency ratio (% of working-age populat...   
-112285         Brazil                       Arable land (% of land area)   
-112329         Brazil  Carbon dioxide (CO2) emissions (total) excludi...   
-112548         Brazil        Electric power consumption (kWh per capita)   
-112596         Brazil           Exports of goods and services (% of GDP)   
-...               ...                                                ...   
-381953  United States                              GDP growth (annual %)   
-382185  United States            Life expectancy at birth, total (years)   
-382192  United States  Literacy rate, adult total (% of people ages 1...   
-382431  United States                            Number of infant deaths   
-382695  United States  Renewable electricity output (% of total elect...   
-
-                2000          2001          2002          2003          2004  \
-112256     53.932034     52.818302     51.753250     50.750001     49.832060   
-112285      5.437573      5.506608      5.575642      5.644677      5.713711   
-112329     53.991040     54.835309     54.878148     52.696297     60.972699   
-112548   1905.771027   1756.811608   1817.135401   1894.629096   1970.415866   
-112596     10.188048     12.371711     14.230590     15.180784     16.545762   
-...              ...           ...           ...           ...           ...   
-381953      4.077586      0.955538      1.700447      2.795606      3.847772   
-382185     76.636585     76.836585     76.936585     77.036585     77.487805   
-382192     78.863815     60.407247     90.000000     59.000000     71.211468   
-382431  28646.000000  28500.000000  28075.000000  27994.000000  28010.000000   
-382695      8.205997      6.783992      8.646361      8.889376      8.630186   
-
-                2005          2006          2007  ...          2013  \
-112256     49.012970     48.268471     47.582612  ...     44.175117   
-112285      5.782746      5.852259      5.926797  ...      6.373667   
-112329     62.711304     64.675301     73.229232  ...    130.595277   
-112548   2031.506080   2089.174985   2185.748762  ...   2601.931811   
-112596     15.243829     14.374316     13.327675  ...     11.742231   
-...              ...           ...           ...  ...           ...   
-381953      3.483550      2.784540      2.003858  ...      2.117830   
-382185     77.487805     77.687805     77.987805  ...     78.741463   
-382192     57.153817     63.679094     85.427892  ...     91.806636   
-382431  27935.000000  28111.000000  28237.000000  ...  23595.000000   
-382695      8.578466      9.244631      8.367764  ...     12.637919   
-
-                2014          2015          2016          2017          2018  \
-112256     43.818370     43.593593     43.439811     43.371330     43.431652   
-112285      6.448205      6.522743      6.597162      6.671580      6.668710   
-112329    140.706496    128.119060    112.622739    117.942083    107.483478   
-112548   2655.034924    910.000000    956.000000   1021.000000   1064.000000   
-112596     11.011943     12.900191     12.466679     12.518968     14.634999   
-...              ...           ...           ...           ...           ...   
-381953      2.523820      2.945550      1.819451      2.457622      2.966505   
-382185     78.841463     78.690244     78.539024     78.539024     78.639024   
-382192     73.360789     73.590274     72.621768     74.361483     96.819626   
-382431  23341.000000  23126.000000  22707.000000  22077.000000  21389.000000   
-382695     12.953827     13.228593     12.071958     12.560554     17.037001   
-
-                2019          2020          2021          2022  
-112256     43.539748     43.586067     43.640470     43.790263  
-112285      6.665840      6.662970      6.660100      6.657230  
-112329    106.318884     97.194511    123.007389    111.073561  
-112548   1084.000000   1084.000000   1084.000000   1084.000000  
-112596     14.122919     16.453552     19.109430     19.630765  
-...              ...           ...           ...           ...  
-381953      2.583825     -2.163029      6.055053      2.512375  
-382185     78.787805     76.980488     76.329268     77.434146  
-382192     77.372880     96.938937     90.000000     75.411809  
-382431  20842.000000  20272.000000  19995.000000  19920.000000  
-382695     16.246645     16.246645     16.246645     16.246645  
-
-[154 rows x 25 columns]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Aggregate data for indicators across all years</span>
-<span class="n">indicator_data</span> <span class="o">=</span> <span class="n">final_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Indicator Name&#39;</span><span class="p">)[</span><span class="n">year_cols</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-
-<span class="c1"># 2. Compute the correlation matrix for indicators</span>
-<span class="n">indicator_correlation_matrix</span> <span class="o">=</span> <span class="n">indicator_data</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-
-<span class="c1"># 3. Print the correlation matrix</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correlation Matrix for Indicators:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">indicator_correlation_matrix</span><span class="p">)</span>
-
-<span class="c1"># 4. Optional: Visualize the correlation matrix using a heatmap</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">indicator_correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlation Matrix Heatmap for Indicators&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation Matrix for Indicators:
-Indicator Name                                      Age dependency ratio (% of working-age population)  \
-Indicator Name                                                                                           
-Age dependency ratio (% of working-age population)                                           1.000000    
-Arable land (% of land area)                                                                -0.700836    
-Carbon dioxide (CO2) emissions (total) excludin...                                          -0.727307    
-Electric power consumption (kWh per capita)                                                  0.348519    
-Exports of goods and services (% of GDP)                                                    -0.789449    
-Forest area (% of land area)                                                                 0.792868    
-GDP growth (annual %)                                                                        0.135811    
-Life expectancy at birth, total (years)                                                     -0.787494    
-Literacy rate, adult total (% of people ages 15...                                          -0.251571    
-Number of infant deaths                                                                      0.841409    
-Renewable electricity output (% of total electr...                                           0.399256    
-
-Indicator Name                                      Arable land (% of land area)  \
-Indicator Name                                                                     
-Age dependency ratio (% of working-age population)                     -0.700836   
-Arable land (% of land area)                                            1.000000   
-Carbon dioxide (CO2) emissions (total) excludin...                      0.886051   
-Electric power consumption (kWh per capita)                            -0.652156   
-Exports of goods and services (% of GDP)                                0.413162   
-Forest area (% of land area)                                           -0.689917   
-GDP growth (annual %)                                                  -0.268478   
-Life expectancy at birth, total (years)                                 0.931494   
-Literacy rate, adult total (% of people ages 15...                      0.277105   
-Number of infant deaths                                                -0.882816   
-Renewable electricity output (% of total electr...                     -0.679517   
-
-Indicator Name                                      Carbon dioxide (CO2) emissions (total) excluding LULUCF (% change from 1990)  \
-Indicator Name                                                                                                                     
-Age dependency ratio (% of working-age population)                                          -0.727307                              
-Arable land (% of land area)                                                                 0.886051                              
-Carbon dioxide (CO2) emissions (total) excludin...                                           1.000000                              
-Electric power consumption (kWh per capita)                                                 -0.809936                              
-Exports of goods and services (% of GDP)                                                     0.446001                              
-Forest area (% of land area)                                                                -0.912896                              
-GDP growth (annual %)                                                                       -0.378799                              
-Life expectancy at birth, total (years)                                                      0.943873                              
-Literacy rate, adult total (% of people ages 15...                                           0.339887                              
-Number of infant deaths                                                                     -0.977085                              
-Renewable electricity output (% of total electr...                                          -0.786057                              
-
-Indicator Name                                      Electric power consumption (kWh per capita)  \
-Indicator Name                                                                                    
-Age dependency ratio (% of working-age population)                                     0.348519   
-Arable land (% of land area)                                                          -0.652156   
-Carbon dioxide (CO2) emissions (total) excludin...                                    -0.809936   
-Electric power consumption (kWh per capita)                                            1.000000   
-Exports of goods and services (% of GDP)                                              -0.073986   
-Forest area (% of land area)                                                           0.704566   
-GDP growth (annual %)                                                                  0.492804   
-Life expectancy at birth, total (years)                                               -0.716231   
-Literacy rate, adult total (% of people ages 15...                                    -0.269717   
-Number of infant deaths                                                                0.755005   
-Renewable electricity output (% of total electr...                                     0.855248   
-
-Indicator Name                                      Exports of goods and services (% of GDP)  \
-Indicator Name                                                                                 
-Age dependency ratio (% of working-age population)                                 -0.789449   
-Arable land (% of land area)                                                        0.413162   
-Carbon dioxide (CO2) emissions (total) excludin...                                  0.446001   
-Electric power consumption (kWh per capita)                                        -0.073986   
-Exports of goods and services (% of GDP)                                            1.000000   
-Forest area (% of land area)                                                       -0.549159   
-GDP growth (annual %)                                                               0.316683   
-Life expectancy at birth, total (years)                                             0.480260   
-Literacy rate, adult total (% of people ages 15...                                 -0.093318   
-Number of infant deaths                                                            -0.532263   
-Renewable electricity output (% of total electr...                                 -0.128741   
-
-Indicator Name                                      Forest area (% of land area)  \
-Indicator Name                                                                     
-Age dependency ratio (% of working-age population)                      0.792868   
-Arable land (% of land area)                                           -0.689917   
-Carbon dioxide (CO2) emissions (total) excludin...                     -0.912896   
-Electric power consumption (kWh per capita)                             0.704566   
-Exports of goods and services (% of GDP)                               -0.549159   
-Forest area (% of land area)                                            1.000000   
-GDP growth (annual %)                                                   0.336668   
-Life expectancy at birth, total (years)                                -0.807423   
-Literacy rate, adult total (% of people ages 15...                     -0.393415   
-Number of infant deaths                                                 0.931655   
-Renewable electricity output (% of total electr...                      0.699410   
-
-Indicator Name                                      GDP growth (annual %)  \
-Indicator Name                                                              
-Age dependency ratio (% of working-age population)               0.135811   
-Arable land (% of land area)                                    -0.268478   
-Carbon dioxide (CO2) emissions (total) excludin...              -0.378799   
-Electric power consumption (kWh per capita)                      0.492804   
-Exports of goods and services (% of GDP)                         0.316683   
-Forest area (% of land area)                                     0.336668   
-GDP growth (annual %)                                            1.000000   
-Life expectancy at birth, total (years)                         -0.410370   
-Literacy rate, adult total (% of people ages 15...              -0.365498   
-Number of infant deaths                                          0.388696   
-Renewable electricity output (% of total electr...               0.431121   
-
-Indicator Name                                      Life expectancy at birth, total (years)  \
-Indicator Name                                                                                
-Age dependency ratio (% of working-age population)                                -0.787494   
-Arable land (% of land area)                                                       0.931494   
-Carbon dioxide (CO2) emissions (total) excludin...                                 0.943873   
-Electric power consumption (kWh per capita)                                       -0.716231   
-Exports of goods and services (% of GDP)                                           0.480260   
-Forest area (% of land area)                                                      -0.807423   
-GDP growth (annual %)                                                             -0.410370   
-Life expectancy at birth, total (years)                                            1.000000   
-Literacy rate, adult total (% of people ages 15...                                 0.284345   
-Number of infant deaths                                                           -0.957313   
-Renewable electricity output (% of total electr...                                -0.725502   
-
-Indicator Name                                      Literacy rate, adult total (% of people ages 15 and above)  \
-Indicator Name                                                                                                   
-Age dependency ratio (% of working-age population)                                          -0.251571            
-Arable land (% of land area)                                                                 0.277105            
-Carbon dioxide (CO2) emissions (total) excludin...                                           0.339887            
-Electric power consumption (kWh per capita)                                                 -0.269717            
-Exports of goods and services (% of GDP)                                                    -0.093318            
-Forest area (% of land area)                                                                -0.393415            
-GDP growth (annual %)                                                                       -0.365498            
-Life expectancy at birth, total (years)                                                      0.284345            
-Literacy rate, adult total (% of people ages 15...                                           1.000000            
-Number of infant deaths                                                                     -0.359812            
-Renewable electricity output (% of total electr...                                          -0.258379            
-
-Indicator Name                                      Number of infant deaths  \
-Indicator Name                                                                
-Age dependency ratio (% of working-age population)                 0.841409   
-Arable land (% of land area)                                      -0.882816   
-Carbon dioxide (CO2) emissions (total) excludin...                -0.977085   
-Electric power consumption (kWh per capita)                        0.755005   
-Exports of goods and services (% of GDP)                          -0.532263   
-Forest area (% of land area)                                       0.931655   
-GDP growth (annual %)                                              0.388696   
-Life expectancy at birth, total (years)                           -0.957313   
-Literacy rate, adult total (% of people ages 15...                -0.359812   
-Number of infant deaths                                            1.000000   
-Renewable electricity output (% of total electr...                 0.750829   
-
-Indicator Name                                      Renewable electricity output (% of total electricity output)  
-Indicator Name                                                                                                    
-Age dependency ratio (% of working-age population)                                           0.399256             
-Arable land (% of land area)                                                                -0.679517             
-Carbon dioxide (CO2) emissions (total) excludin...                                          -0.786057             
-Electric power consumption (kWh per capita)                                                  0.855248             
-Exports of goods and services (% of GDP)                                                    -0.128741             
-Forest area (% of land area)                                                                 0.699410             
-GDP growth (annual %)                                                                        0.431121             
-Life expectancy at birth, total (years)                                                     -0.725502             
-Literacy rate, adult total (% of people ages 15...                                          -0.258379             
-Number of infant deaths                                                                      0.750829             
-Renewable electricity output (% of total electr...                                           1.000000             
-</pre></div>
-</div>
-<img alt="_images/c4647abcff2c2f58cbcc78b770f2ccd03cdf582940e691f6cc4d1919837315cd.png" src="_images/c4647abcff2c2f58cbcc78b770f2ccd03cdf582940e691f6cc4d1919837315cd.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
-
-<span class="c1"># Assuming indicator_correlation_matrix is already calculated</span>
-
-<span class="c1"># 1. Extract correlation pairs (excluding diagonal)</span>
-<span class="n">correlation_pairs</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">indicators</span> <span class="o">=</span> <span class="n">indicator_correlation_matrix</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">indicators</span><span class="p">)):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">indicators</span><span class="p">)):</span>
-        <span class="n">ind1</span> <span class="o">=</span> <span class="n">indicators</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">ind2</span> <span class="o">=</span> <span class="n">indicators</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-        <span class="n">corr_value</span> <span class="o">=</span> <span class="n">indicator_correlation_matrix</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ind1</span><span class="p">,</span> <span class="n">ind2</span><span class="p">]</span>
-        <span class="n">correlation_pairs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ind1</span><span class="p">,</span> <span class="n">ind2</span><span class="p">,</span> <span class="n">corr_value</span><span class="p">))</span>
-
-<span class="c1"># 2. Convert to DataFrame and sort</span>
-<span class="n">corr_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">correlation_pairs</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Indicator 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Correlation&#39;</span><span class="p">])</span>
-<span class="n">corr_df</span> <span class="o">=</span> <span class="n">corr_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="c1"># 3. Get top positive and negative correlations</span>
-<span class="n">top_positive</span> <span class="o">=</span> <span class="n">corr_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">top_negative</span> <span class="o">=</span> <span class="n">corr_df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># 4. Print the top correlations</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 5 Positive Correlations:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">top_positive</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top 5 Negative Correlations:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">top_negative</span><span class="p">)</span>
-
-<span class="c1"># 5. Visualization function for indicator pairs</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">plot_correlation_pair</span><span class="p">(</span><span class="n">ind1</span><span class="p">,</span> <span class="n">ind2</span><span class="p">,</span> <span class="n">corr_value</span><span class="p">,</span> <span class="n">corr_type</span><span class="o">=</span><span class="s2">&quot;Positive&quot;</span><span class="p">):</span>
-    <span class="c1"># Get data for the two indicators</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">indicator_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ind1</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">indicator_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ind2</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-    
-    <span class="c1"># Remove NaN values</span>
-    <span class="n">valid</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">|</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span>
-    
-    <span class="c1"># Create plot</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#38b6c1&#39;</span><span class="p">)</span>
-    
-    <span class="c1"># Add trend line</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Need at least 2 points for a line</span>
-        <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-    
-    <span class="c1"># Format labels for readability</span>
-    <span class="n">ind1_short</span> <span class="o">=</span> <span class="n">ind1</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ind1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">25</span> <span class="k">else</span> <span class="n">ind1</span><span class="p">[:</span><span class="mi">22</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;...&quot;</span>
-    <span class="n">ind2_short</span> <span class="o">=</span> <span class="n">ind2</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ind2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">25</span> <span class="k">else</span> <span class="n">ind2</span><span class="p">[:</span><span class="mi">22</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;...&quot;</span>
-    
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">corr_type</span><span class="si">}</span><span class="s2"> Correlation: </span><span class="si">{</span><span class="n">ind1_short</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">ind2_short</span><span class="si">}</span><span class="se">\n</span><span class="s2">Correlation: </span><span class="si">{</span><span class="n">corr_value</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">ind1_short</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="n">ind2_short</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-<span class="c1"># 6. Plot top positive correlations</span>
-<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">top_positive</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="n">plot_correlation_pair</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 1&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 2&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Correlation&#39;</span><span class="p">],</span> <span class="s2">&quot;Positive&quot;</span><span class="p">)</span>
-
-<span class="c1"># 7. Plot top negative correlations</span>
-<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">top_negative</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="n">plot_correlation_pair</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 1&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 2&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Correlation&#39;</span><span class="p">],</span> <span class="s2">&quot;Negative&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 5 Positive Correlations:
-                                          Indicator 1  \
-23  Carbon dioxide (CO2) emissions (total) excludi...   
-43                       Forest area (% of land area)   
-15                       Arable land (% of land area)   
-10                       Arable land (% of land area)   
-33        Electric power consumption (kWh per capita)   
-
-                                          Indicator 2  Correlation  
-23            Life expectancy at birth, total (years)     0.943873  
-43                            Number of infant deaths     0.931655  
-15            Life expectancy at birth, total (years)     0.931494  
-10  Carbon dioxide (CO2) emissions (total) excludi...     0.886051  
-33  Renewable electricity output (% of total elect...     0.855248  
-
-Top 5 Negative Correlations:
-                                          Indicator 1  \
-19  Carbon dioxide (CO2) emissions (total) excludi...   
-17                       Arable land (% of land area)   
-21  Carbon dioxide (CO2) emissions (total) excludi...   
-50            Life expectancy at birth, total (years)   
-25  Carbon dioxide (CO2) emissions (total) excludi...   
-
-                                    Indicator 2  Correlation  
-19  Electric power consumption (kWh per capita)    -0.809936  
-17                      Number of infant deaths    -0.882816  
-21                 Forest area (% of land area)    -0.912896  
-50                      Number of infant deaths    -0.957313  
-25                      Number of infant deaths    -0.977085  
-</pre></div>
-</div>
-<img alt="_images/dbc39a0214bea454d34c57dd1743d95c74bf219f8c441750fb86005e893d9f02.png" src="_images/dbc39a0214bea454d34c57dd1743d95c74bf219f8c441750fb86005e893d9f02.png" />
-<img alt="_images/7d8adfa97a662babfa7f6604e2c464ec1947645e2a36ef0b58adaf2725a33be3.png" src="_images/7d8adfa97a662babfa7f6604e2c464ec1947645e2a36ef0b58adaf2725a33be3.png" />
-<img alt="_images/7c11da9f70d70d4093a51844001ea562afeafa9902007d1b65870c03a912b1f1.png" src="_images/7c11da9f70d70d4093a51844001ea562afeafa9902007d1b65870c03a912b1f1.png" />
-<img alt="_images/b70dfb5dbe874d68745da6d3d3d06e5ca71a21c6e9abf6b6171b855d13cbdca2.png" src="_images/b70dfb5dbe874d68745da6d3d3d06e5ca71a21c6e9abf6b6171b855d13cbdca2.png" />
-<img alt="_images/d82ed88844e40fcac4b40cf25b09818c3d0137e3cec6477fb15b65c404fd26b1.png" src="_images/d82ed88844e40fcac4b40cf25b09818c3d0137e3cec6477fb15b65c404fd26b1.png" />
-<img alt="_images/b30f7020d32a6806531e685785e45978ce18427d1731b426727fe2bbe9e0f540.png" src="_images/b30f7020d32a6806531e685785e45978ce18427d1731b426727fe2bbe9e0f540.png" />
-<img alt="_images/ba93ffd7ec9efd3dc69c91f640521861c2f99e77af671c24d7e66cedbd5f9ca1.png" src="_images/ba93ffd7ec9efd3dc69c91f640521861c2f99e77af671c24d7e66cedbd5f9ca1.png" />
-<img alt="_images/c3e9dc1dcc94bc8185491136ee5f69cc67a0d11bdcbdf86bb3d2510dbcbc85d9.png" src="_images/c3e9dc1dcc94bc8185491136ee5f69cc67a0d11bdcbdf86bb3d2510dbcbc85d9.png" />
-<img alt="_images/08c18fd521bf22ecd9fdc901c92709799185ba17bc3aa143bd2e1473599c5973.png" src="_images/08c18fd521bf22ecd9fdc901c92709799185ba17bc3aa143bd2e1473599c5973.png" />
-<img alt="_images/b745754144147ad9ed6378cc1c3c575f908157b18ea0f4d752769e065680f8bf.png" src="_images/b745754144147ad9ed6378cc1c3c575f908157b18ea0f4d752769e065680f8bf.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1225,17 +733,326 @@ Top 5 Negative Correlations:
 
     <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="k">del</span> <span class="n">df_long</span><span class="p">,</span><span class="n">df</span>
-
-
-<span class="k">for</span> <span class="n">indicator</span> <span class="ow">in</span> <span class="n">indicators_filtered</span><span class="p">:</span>
-    <span class="n">plot_data</span><span class="p">(</span><span class="n">indicator</span><span class="p">)</span>
-    
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="research-and-development-expenditure">
+<h2>Research and Development Expenditure:<a class="headerlink" href="#research-and-development-expenditure" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed countries can generally afford to spend more money on R&amp;D than underdeveloped and developing countries, who require funds for infrastructure. Over time, expense on R&amp;D should increase to align with SDG 9: Industry, Innovation and Infrastructure.<br />
+Observation - The top three countries spending on R&amp;D are Japan, US, and Germany; all are developed. Least expenditure is from underdeveloped countries like Indonesia and Burundi. Over time, there is a slight increase in expense for all countries, except Chad which has experienced a dramatic surge.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 </div>
 </div>
+</section>
+<section id="renewable-electricity">
+<h2>Renewable Electricity:<a class="headerlink" href="#renewable-electricity" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed countries generally have more sources and technology of renewable electricity than underdeveloped and developing countries, who depend primarily on fossil fuels for electricity. Over time, dependence on renewable electricity should increase to align with SDG 7: Affordable and Clean Energy.<br />
+Observation - The leading countries in renewable electricity are Brazil and Niger. Over time, there is a slight increase in renewable electricity output for most countries, except Niger which has shown a significant decline.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="life-expectancy-at-birth">
+<h1>Life Expectancy at Birth:<a class="headerlink" href="#life-expectancy-at-birth" title="Link to this heading">#</a></h1>
+<p>Hypothesis - Developed countries generally have better healthcare facilities such as hospitals, doctors, and medical infrastructure compared to underdeveloped and developing countries, which often struggle with poor health systems. Over time, life expectancy should increase with improvements in healthcare to align with SDG 3: Good Health and Well Being.<br />
+Observation - The top countries in life expectancy are Japan, UK, and Germany; all are developed. Over time, there is a slight increase in life expectancy for all countries, except Haiti which saw a sharp decline in 2010 due to the devastating earthquake.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="gdp-growth">
+<h2>GDP Growth:<a class="headerlink" href="#gdp-growth" title="Link to this heading">#</a></h2>
+<p>Hypothesis - GDP growth is generally stagnant in developed countries, highly increasing in developing countries, and slightly increasing in underdeveloped countries, with various fluctuations due to economic events. Over time, GDP growth should become similar for all countries to align with SDG 8: Decent work and Economic growth.<br />
+Observation - GDP growth is fluctuating for almost all countries. There are two major periods of fluctuation—the 2008 economic crisis and the 2020 COVID pandemic—both causing a significant dip in GDP growth across almost all nations. Chad saw a dramatic increase in GDP growth during 2004 due to the Doba oil project and the completion of the Chad-Cameroon pipeline.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="forest-area">
+<h2>Forest Area:<a class="headerlink" href="#forest-area" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed countries generally focus more on infrastructure growth, which may lead to less forest area compared to developing and underdeveloped countries that still retain vast forest lands. Over time, forest area should increase to align with SDG 13: Climate Action and SDG 15: Life on Land.<br />
+Observation - The top countries in forest area are Japan, Brazil, and Indonesia; all have massive rainforests like the Amazon or managed forests. Over time, there has been no increase in forest area for any country except Brazil which has seen a slight decrease due to widespread forest fires.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="exports-of-goods-and-services">
+<h2>Exports of Goods and Services:<a class="headerlink" href="#exports-of-goods-and-services" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed countries are generally more advanced in trade and technology and earn more from exports compared to developing and underdeveloped nations that rely more on imports. Over time, exports should increase to align with SDG 9: Industry, Innovation and Infrastructure and SDG 8: Decent work and Economic growth.<br />
+Observation - The top exporting nations are Germany, UK, and Mexico. Over time, there are slight variations in exports across all nations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="electric-power-consumption">
+<h2>Electric Power Consumption:<a class="headerlink" href="#electric-power-consumption" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed nations tend to consume more electricity due to larger industrial bases compared to developing and underdeveloped nations that have fewer industries or lower populations resulting in less power usage. Over time, electric power consumption should increase to align with SDG 7: Affordable and Clean Energy.<br />
+Observation - The top consumers of electric power are China, Japan, and Germany; all are developed nations. Over time, there has been little change in power consumption across most nations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="carbon-dioxide-emissions">
+<h2>Carbon Dioxide Emissions:<a class="headerlink" href="#carbon-dioxide-emissions" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed nations generally use more electricity and have larger industrial bases compared to developing or underdeveloped nations resulting in higher CO2 emissions. Over time, CO2 emissions should decrease to align with SDG 12: Responsible Consumption and Production and SDG 13: Climate Action.<br />
+Observation - The country leading CO2 emissions is Chad. Over time, CO2 emissions have increased across all nations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="arable-land">
+<h2>Arable Land:<a class="headerlink" href="#arable-land" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed nations prioritize infrastructure growth over agriculture leading to reduced arable land compared to developing or underdeveloped nations that retain larger agricultural areas. Over time, arable land should increase to align with SDG 13: Climate Action and SDG 15: Life on Land.<br />
+Observation - The top nations with arable land are India, South Africa, and Haiti; all are developing nations. Over time, there has been no significant change in arable land for any country except Haiti which saw a minor increase.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="age-dependency-ratio">
+<h2>Age Dependency Ratio:<a class="headerlink" href="#age-dependency-ratio" title="Link to this heading">#</a></h2>
+<p>Hypothesis - Developed nations generally have lower age dependency ratios due to smaller older populations combined with higher employment among younger populations compared to underdeveloped or developing nations that rely heavily on working-age populations for support. Over time, age dependency ratios should decrease to align with SDG 10: Reduced Inequalities.<br />
+Observation - The top nations with high age dependency ratios are Niger, Chad, and Burundi; all are underdeveloped nations. Over time, age dependency ratios have decreased across most nations except Japan where reductions in birth rates have led to an aging population.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_data</span><span class="p">(</span><span class="n">indicators_filtered</span><span class="p">[</span><span class="mi">9</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="correlation">
+<h1>Correlation<a class="headerlink" href="#correlation" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data_wdi_filtered.csv&#39;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Country Code&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator Code&#39;</span><span class="p">,</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span><span class="s1">&#39;2023&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1960</span><span class="p">,</span><span class="mi">2000</span><span class="p">)],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="n">grouped_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Indicator Name&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grouped_data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">indicator_names</span> <span class="o">=</span> <span class="n">grouped_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">data_numeric</span> <span class="o">=</span> <span class="n">grouped_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span>
+
+<span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">data_numeric</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span>
+    <span class="n">corr_matrix</span><span class="p">,</span>
+    <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>             
+    <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">,</span>              
+    <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span>        
+    <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>         
+    <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>      
+    <span class="n">xticklabels</span><span class="o">=</span><span class="n">indicator_names</span><span class="p">,</span> 
+    <span class="n">yticklabels</span><span class="o">=</span><span class="n">indicator_names</span>  
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Indicator Correlation Heatmap&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Indicators&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Indicators&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Indicator Name&#39;, &#39;2000&#39;, &#39;2001&#39;, &#39;2002&#39;, &#39;2003&#39;, &#39;2004&#39;, &#39;2005&#39;,
+       &#39;2006&#39;, &#39;2007&#39;, &#39;2008&#39;, &#39;2009&#39;, &#39;2010&#39;, &#39;2011&#39;, &#39;2012&#39;, &#39;2013&#39;, &#39;2014&#39;,
+       &#39;2015&#39;, &#39;2016&#39;, &#39;2017&#39;, &#39;2018&#39;, &#39;2019&#39;, &#39;2020&#39;, &#39;2021&#39;, &#39;2022&#39;],
+      dtype=&#39;object&#39;)
+(9, 24)
+</pre></div>
+</div>
+<img alt="_images/0997723f17ad2ade5892fead930f243e65b294205e5268e570864c8e3fd0914f.png" src="_images/0997723f17ad2ade5892fead930f243e65b294205e5268e570864c8e3fd0914f.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="c1"># Assume corr_matrix and data are defined and populated earlier</span>
+
+<span class="n">correlation_pairs</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">indicators</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">indicator_names</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">indicators</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">indicators</span><span class="p">)):</span>
+        <span class="n">ind1</span> <span class="o">=</span> <span class="n">indicators</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">ind2</span> <span class="o">=</span> <span class="n">indicators</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+        <span class="c1"># Ensure indices used for .loc are valid before getting value</span>
+        <span class="k">if</span> <span class="n">ind1</span> <span class="ow">in</span> <span class="n">corr_matrix</span><span class="o">.</span><span class="n">index</span> <span class="ow">and</span> <span class="n">ind2</span> <span class="ow">in</span> <span class="n">corr_matrix</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+             <span class="n">corr_value</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ind1</span><span class="p">,</span> <span class="n">ind2</span><span class="p">]</span>
+             <span class="n">correlation_pairs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ind1</span><span class="p">,</span> <span class="n">ind2</span><span class="p">,</span> <span class="n">corr_value</span><span class="p">))</span>
+        <span class="c1"># Optional: Add an else clause here to log or handle missing pairs if needed</span>
+
+<span class="n">corr_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">correlation_pairs</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Indicator 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Correlation&#39;</span><span class="p">])</span>
+<span class="n">corr_df</span> <span class="o">=</span> <span class="n">corr_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">top_positive</span> <span class="o">=</span> <span class="n">corr_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">top_negative</span> <span class="o">=</span> <span class="n">corr_df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 5 Positive Correlations:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_positive</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top 5 Negative Correlations:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_negative</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_correlation_pair</span><span class="p">(</span><span class="n">ind1</span><span class="p">,</span> <span class="n">ind2</span><span class="p">,</span> <span class="n">corr_value</span><span class="p">,</span> <span class="n">corr_type</span><span class="o">=</span><span class="s2">&quot;Positive&quot;</span><span class="p">):</span>
+    <span class="c1"># Convert indicator names to string format for safe handling</span>
+    <span class="n">ind1_str</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ind1</span><span class="p">)</span>
+    <span class="n">ind2_str</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ind2</span><span class="p">)</span>
+
+    <span class="c1"># Use original ind1/ind2 to access data, assuming data.loc can handle the type</span>
+    <span class="c1"># Add error handling in case data access fails (e.g., index type mismatch)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ind1</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ind2</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+    <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error accessing data: Index </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2"> not found in &#39;data&#39; DataFrame. Skipping plot for </span><span class="si">{</span><span class="n">ind1_str</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">ind2_str</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="c1"># Stop executing this function call</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;An unexpected error occurred accessing data for </span><span class="si">{</span><span class="n">ind1_str</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">ind2_str</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">. Skipping plot.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="c1"># Stop executing this function call</span>
+
+    <span class="n">valid</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">|</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Not enough valid data points to plot for </span><span class="si">{</span><span class="n">ind1_str</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">ind2_str</span><span class="si">}</span><span class="s2">. Skipping plot.&quot;</span><span class="p">)</span>
+         <span class="k">return</span> <span class="c1"># Stop executing if not enough points</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#38b6c1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Check again if enough points remain for polyfit after NaN removal</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">LinAlgError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">fit_err</span><span class="p">:</span>
+             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Could not fit trend line for </span><span class="si">{</span><span class="n">ind1_str</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">ind2_str</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fit_err</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">corr_type</span><span class="si">}</span><span class="s2"> Correlation: </span><span class="si">{</span><span class="n">ind1_str</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">ind2_str</span><span class="si">}</span><span class="se">\n</span><span class="s2">Correlation: </span><span class="si">{</span><span class="n">corr_value</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">ind1_str</span><span class="p">],</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">ind2_str</span><span class="p">],</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">top_positive</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">plot_correlation_pair</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 1&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 2&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Correlation&#39;</span><span class="p">],</span> <span class="s2">&quot;Positive&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">top_negative</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">plot_correlation_pair</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 1&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Indicator 2&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Correlation&#39;</span><span class="p">],</span> <span class="s2">&quot;Negative&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 5 Positive Correlations:
+    Indicator 1  Indicator 2  Correlation
+19            2            7     0.943873
+13            1            7     0.931494
+8             1            2     0.886051
+25            3            8     0.814677
+4             0            5     0.792868
+
+Top 5 Negative Correlations:
+    Indicator 1  Indicator 2  Correlation
+15            2            3    -0.738053
+6             0            7    -0.787494
+3             0            4    -0.789449
+31            5            7    -0.807423
+17            2            5    -0.912896
+</pre></div>
+</div>
+<img alt="_images/9b245b8e3192d2aa30418fb39009b189ff4ae2fa84ad1a66fe27e2708eb27bfe.png" src="_images/9b245b8e3192d2aa30418fb39009b189ff4ae2fa84ad1a66fe27e2708eb27bfe.png" />
+<img alt="_images/0a0a5c029f4bdccead1461ea12d85c3d07ddd8bcadefd8a3a33c51d3d3d29968.png" src="_images/0a0a5c029f4bdccead1461ea12d85c3d07ddd8bcadefd8a3a33c51d3d3d29968.png" />
+<img alt="_images/ef8d3e0a9e542756b85fd87992e499721a12be1c9c3920ece3435ed4a934ae9d.png" src="_images/ef8d3e0a9e542756b85fd87992e499721a12be1c9c3920ece3435ed4a934ae9d.png" />
+<img alt="_images/263d792adfaa7cac79d7c019b1ef8bb9c03e63f18c653bbfaec9fa425993b827.png" src="_images/263d792adfaa7cac79d7c019b1ef8bb9c03e63f18c653bbfaec9fa425993b827.png" />
+<img alt="_images/29838537ed565b23a6c50f94a6d3cc914986baaa95e5312456fb10a9e094976f.png" src="_images/29838537ed565b23a6c50f94a6d3cc914986baaa95e5312456fb10a9e094976f.png" />
+<img alt="_images/419c31d56c12252a4b4089dc0fb2cb07308b09ac4e3419c22334b9c0fb7037c7.png" src="_images/419c31d56c12252a4b4089dc0fb2cb07308b09ac4e3419c22334b9c0fb7037c7.png" />
+<img alt="_images/7ce37843981151009f38b6f29bbbd2c759dcf46a3f43597e3586d5913dc07096.png" src="_images/7ce37843981151009f38b6f29bbbd2c759dcf46a3f43597e3586d5913dc07096.png" />
+<img alt="_images/3a20e5263ebd75b993acac0d6594f31ac895a9da5d966a0d352f0de6274d5b95.png" src="_images/3a20e5263ebd75b993acac0d6594f31ac895a9da5d966a0d352f0de6274d5b95.png" />
+<img alt="_images/a027992bc53dde865dcbb40de28a09f2675d1188d3fa762be4677224e54ad791.png" src="_images/a027992bc53dde865dcbb40de28a09f2675d1188d3fa762be4677224e54ad791.png" />
+<img alt="_images/56b31238a86dfd947b26e145993c80145de1b837b0a20e4bf35a1bebd345e239.png" src="_images/56b31238a86dfd947b26e145993c80145de1b837b0a20e4bf35a1bebd345e239.png" />
+</div>
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1291,7 +1108,24 @@ Top 5 Negative Correlations:
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">A Case study on how different countries develop</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-science-assignment">Data Science Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-and-development-expenditure">Research and Development Expenditure:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renewable-electricity">Renewable Electricity:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#life-expectancy-at-birth">Life Expectancy at Birth:</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gdp-growth">GDP Growth:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forest-area">Forest Area:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exports-of-goods-and-services">Exports of Goods and Services:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-power-consumption">Electric Power Consumption:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-dioxide-emissions">Carbon Dioxide Emissions:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arable-land">Arable Land:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#age-dependency-ratio">Age Dependency Ratio:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
 </ul>
 
   </nav></div>

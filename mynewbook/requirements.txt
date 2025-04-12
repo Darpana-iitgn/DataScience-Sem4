@@ -3,4 +3,7 @@ matplotlib
 numpy
 pandas
 plotly
+plotly-express
 numpy
+seaborn
+scikit-learn
