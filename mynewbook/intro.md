@@ -1,6 +1,7 @@
 # Writing Assignment CS 328
 
 Team DeepSeekerZ
+
 Group Members:
 1) Chavda Haarit R. (23110077)
 2) Darpana Desai (23110085)
