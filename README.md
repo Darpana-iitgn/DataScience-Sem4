@@ -1,12 +1,17 @@
 # DataScience-Sem4
 Interesting projects for CS308
 
+# Graph Stream Library ;->
+
 
 
 # Project Structure
 datasets  ---> Contains all the datasets
-main.ipynb ---> main notebook used by viola
+main.ipynb ---> main notebook used by viola // Now renamed as Writing_Assignment_Final.ipynb
 dockerfile---> docker configuration file
+
+Sketch_Algorithms_Final.ipynb  // Finalized Sketch Algorithms   Note: add the comparison with ground truth values (sir's suggestion)
+Streaming_Algorithms_Final.ipynb // Finalized Sketch Algorithms Note: Add the experiments with the different values of the constants to compare how the constants affects the outputs.
 
 
 # Quick setup
